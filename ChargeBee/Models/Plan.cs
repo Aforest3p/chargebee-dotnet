@@ -301,9 +301,24 @@ namespace ChargeBee.Models
         {
             get { return GetValue<bool?>("show_description_in_quotes", false); }
         }
-        
+
+        public string ProductLicenceName
+        {
+            get { return GetValue<string>("cf_product_licence_name", true); }
+        }
+
+        public string IsBundle
+        {
+            get { return GetValue<string>("cf_is_bundle", true); }
+        }
+
+        public string RecordTypeId
+        {
+            get { return GetValue<string>("cf_record_type_id", true); }
+        }
+
         #endregion
-        
+
         #region Requests
         public class CreateRequest : EntityRequest<CreateRequest> 
         {
