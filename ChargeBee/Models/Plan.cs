@@ -649,6 +649,21 @@ namespace ChargeBee.Models
                 m_params.AddOpt("attached_addons[type][" + index + "]", attachedAddonType);
                 return this;
             }
+            public CreateRequest ProductLicenceName(string productLicenceName)
+            {
+                m_params.AddOpt("cf_product_licence_name", productLicenceName);
+                return this;
+            }
+            public CreateRequest IsBundle(string productLicenceName)
+            {
+                m_params.AddOpt("cf_is_bundle", productLicenceName);
+                return this;
+            }
+            public CreateRequest RecordTypeId(string productLicenceName)
+            {
+                m_params.AddOpt("cf_record_type_id", productLicenceName);
+                return this;
+            }
         }
         public class UpdateRequest : EntityRequest<UpdateRequest> 
         {
