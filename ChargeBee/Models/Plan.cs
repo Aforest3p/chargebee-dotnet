@@ -1063,6 +1063,18 @@ namespace ChargeBee.Models
                 m_params.AddOpt("include_deleted", includeDeleted);
                 return this;
             }
+            public StringFilter<PlanListRequest> ProductLicenceName()
+            {
+                return new StringFilter<PlanListRequest>("cf_product_licence_name", this).SupportsMultiOperators(true);
+            }
+            public StringFilter<PlanListRequest> IsBundle()
+            {
+                return new StringFilter<PlanListRequest>("cf_is_bundle", this).SupportsMultiOperators(true);
+            }
+            public StringFilter<PlanListRequest> RecordTypeId()
+            {
+                return new StringFilter<PlanListRequest>("cf_record_type_id", this).SupportsMultiOperators(true);
+            }
         }
         public class CopyRequest : EntityRequest<CopyRequest> 
         {
