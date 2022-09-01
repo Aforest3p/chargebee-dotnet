@@ -654,14 +654,14 @@ namespace ChargeBee.Models
                 m_params.AddOpt("cf_product_licence_name", productLicenceName);
                 return this;
             }
-            public CreateRequest IsBundle(string productLicenceName)
+            public CreateRequest IsBundle(string isBundle)
             {
-                m_params.AddOpt("cf_is_bundle", productLicenceName);
+                m_params.AddOpt("cf_is_bundle", isBundle);
                 return this;
             }
-            public CreateRequest RecordTypeId(string productLicenceName)
+            public CreateRequest RecordTypeId(string recordTypeId)
             {
-                m_params.AddOpt("cf_record_type_id", productLicenceName);
+                m_params.AddOpt("cf_record_type_id", recordTypeId);
                 return this;
             }
         }
